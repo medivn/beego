@@ -216,6 +216,15 @@ func snakeString(s string) string {
 	return strings.ToLower(string(data[:]))
 }
 
+func firstLowString(s string) string {
+	first := s[0]
+	left := s[1:]
+	b := bytes.Buffer{}
+	b.WriteString(strings.ToLower(string(first)))
+	b.WriteString(left)
+	return b.String();
+}
+
 // camel string, xx_yy to XxYy
 func camelString(s string) string {
 	data := make([]byte, 0, len(s))
