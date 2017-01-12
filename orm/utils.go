@@ -217,6 +217,7 @@ func snakeString(s string) string {
 }
 
 func firstLowString(s string) string {
+
 	first := s[0]
 	left := s[1:]
 	b := bytes.Buffer{}
